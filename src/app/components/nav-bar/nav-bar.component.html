@@ -2,7 +2,7 @@
     <div class="col-span-2 grid grid-cols-3 gap-4">
         <div class="logo flex justify-start items-center cursor-pointer">
             <div class="flex justify-start items-center px-2 h-[40px] text-[40px] lilita-one-regular"><h1 class="text-gray-400">J<span class="text-orange-500">A</span>K</h1></div>
-            <div class="flex justify-start items-center px-2 bg-orange-500 text-white font-bold rounded-sm"><small>Portafolio</small></div>
+            <div class="flex justify-start items-center px-2 bg-orange-500 text-white font-bold rounded-sm"><small>Portfolio</small></div>
         </div>
         <div class="info flex justify-start items-center">
             <p class="flex items-center justify-start text-center"><lucide-icon name="mail" class="mx-2" [size]="20"></lucide-icon> jak.ce30&#64;gmail.com</p>
@@ -11,11 +11,11 @@
             <lucide-icon name="bolt" [size]="20"></lucide-icon>
         </div>
     </div>
-    <div class="hidden lg:grid grid-cols-4 gap-4">
-        <div class="flex items-center justify-start text-center cursor-pointer"><lucide-icon name="house" class="mx-1" [size]="20"></lucide-icon> home</div>
-        <div class="flex items-center justify-start text-center cursor-pointer"><lucide-icon name="User" class="mx-1" [size]="20"></lucide-icon> about</div>
-        <div class="flex items-center justify-start text-center cursor-pointer"><lucide-icon name="BriefcaseBusiness" class="mx-1" [size]="20"></lucide-icon> projects</div>
-        <div class="flex items-center justify-start text-center cursor-pointer"><lucide-icon name="ContactRound" class="mx-1" [size]="20"></lucide-icon> contact</div>
+    <div class="hidden lg:flex justify-evenly items-center gap-4">
+        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/home"><lucide-icon name="house" class="mx-1" [size]="20"></lucide-icon> home</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/about"><lucide-icon name="User" class="mx-1" [size]="20"></lucide-icon> about</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/projects"><lucide-icon name="BriefcaseBusiness" class="mx-1" [size]="20"></lucide-icon> projects</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/contact"><lucide-icon name="ContactRound" class="mx-1" [size]="20"></lucide-icon> contact</div>
     </div>
 </div>
 
@@ -38,18 +38,18 @@
 
         <!-- Desktop Menu (visible on larger screens) -->
         <div class="hidden sm:flex space-x-4 text-black">
-            <a href="#home" class="hover:text-orange-400">Home</a>
-            <a href="#about" class="hover:text-orange-400">About</a>
-            <a href="#projects" class="hover:text-orange-400">Projects</a>
-            <a href="#contact" class="hover:text-orange-400">Contact</a>
+            <a routerLink="/home" class="hover:text-orange-400">Home</a>
+            <a routerLink="/about" class="hover:text-orange-400">About</a>
+            <a routerLink="/projects" class="hover:text-orange-400">Projects</a>
+            <a routerLink="/contact" class="hover:text-orange-400">Contact</a>
         </div>
     </div>
 
     <!-- Mobile Menu (visible when the menu is toggled) -->
     <div *ngIf="menuOpen" class="sm:hidden mt-4">
-        <a href="#home" class="block py-2 px-4 text-black hover:bg-gray-700">Home</a>
-        <a href="#about" class="block py-2 px-4 text-black hover:bg-gray-700">About</a>
-        <a href="#projects" class="block py-2 px-4 text-black hover:bg-gray-700">Projects</a>
-        <a href="#contact" class="block py-2 px-4 text-black hover:bg-gray-700">Contact</a>
+        <a routerLink="/home" class="block font-bold py-2 px-4 text-orange-500 hover:bg-orange-500 hover:text-white">Home</a>
+        <a routerLink="/about" class="block font-bold py-2 px-4 text-orange-500 hover:bg-orange-500 hover:text-white">About</a>
+        <a routerLink="/projects" class="block font-bold py-2 px-4 text-orange-500 hover:bg-orange-500 hover:text-white">Projects</a>
+        <a routerLink="/contact" class="block font-bold py-2 px-4 text-orange-500 hover:bg-orange-500 hover:text-white">Contact</a>
     </div>
 </div>

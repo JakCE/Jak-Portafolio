@@ -1,7 +1,8 @@
 <div class="md:grid grid-cols-2 part-layout overflow-auto">
     <div class="flex flex-col justify-center items-start mx-10 lg:mx-32 flex-wrap">
-        <div class="flex justify-start items-center pb-5 text-[40px] lilita-one-regular">
+        <div class="flex justify-between w-full items-center pb-5 text-[35px] md:text-[40px] lilita-one-regular">
             <h1>Hi, i'm Jak Campos</h1>
+            <img src="./jak_perfil.jpg" alt="" class="w-32 flex md:hidden rounded-full">
         </div>
         <div class="w-full pb-5">
             <p>
@@ -11,11 +12,11 @@
                 full-stack development skills to create innovative and scalable solutions. 
             </p>
         </div>
-        <div class="bg-orange-500 text-white p-3 hover:underline font-bold cursor-pointer">
+        <div class="bg-orange-500 text-white p-3 hover:underline font-bold cursor-pointer" routerLink="/about">
             <p class="flex justify-center items-center">Get to know me &nbsp; <lucide-icon name="move-right" [size]="20" color="#fff"></lucide-icon></p>
         </div>
     </div>
-    <div class="part-layout flex justify-center items-center">
-        <img src="./img_home.png" alt="" class="">
+    <div class="hidden part-layout md:flex justify-center items-center">
+        <img src="./img_vector.svg" alt="" class="rounded-full filter drop-shadow-lg">
     </div>
 </div>
