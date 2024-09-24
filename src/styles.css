@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: #ffb412; /* Cambia el color de fondo */
+    color: #000; /* Cambia el color del texto si lo deseas */
+}
