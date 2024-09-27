@@ -4,18 +4,18 @@
             <div class="flex justify-start items-center px-2 h-[40px] text-[40px] lilita-one-regular"><h1 class="text-gray-400">J<span class="text-orange-500">A</span>K</h1></div>
             <div class="flex justify-start items-center px-2 bg-orange-500 text-white font-bold rounded-sm"><small>Portfolio</small></div>
         </div>
-        <div class="info flex justify-start items-center">
+        <div class="info flex justify-start items-center" *ngIf="mailVisible">
             <p class="flex items-center justify-start text-center"><lucide-icon name="mail" class="mx-2" [size]="20"></lucide-icon> jak.ce30&#64;gmail.com</p>
         </div>
         <div class="config flex justify-start items-center">
-            <lucide-icon name="bolt" [size]="20"></lucide-icon>
+            <!-- <lucide-icon name="bolt" [size]="20"></lucide-icon> -->
         </div>
     </div>
     <div class="hidden lg:flex justify-evenly items-center gap-4">
-        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/home"><lucide-icon name="house" class="mx-1" [size]="20"></lucide-icon> home</div>
-        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/about"><lucide-icon name="User" class="mx-1" [size]="20"></lucide-icon> about</div>
-        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/projects"><lucide-icon name="BriefcaseBusiness" class="mx-1" [size]="20"></lucide-icon> projects</div>
-        <div class="flex items-center justify-start text-center cursor-pointer hover:text-orange-500 hover:font-bold" routerLink="/contact"><lucide-icon name="ContactRound" class="mx-1" [size]="20"></lucide-icon> contact</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold" routerLink="/home"><lucide-icon name="house" class="mx-1" [size]="20"></lucide-icon> Home</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold" routerLink="/about"><lucide-icon name="User" class="mx-1" [size]="20"></lucide-icon> About</div>
+        <div class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold" routerLink="/projects"><lucide-icon name="BriefcaseBusiness" class="mx-1" [size]="20"></lucide-icon> Projects</div>
+        <a class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold" href="https://read.cv/jak_ce" target="_blank"><lucide-icon name="File" class="mx-1" [size]="20"></lucide-icon> My cv</a>
     </div>
 </div>
 

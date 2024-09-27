@@ -5,3 +5,8 @@
     font-weight: 400;
     font-style: normal;
 }
+.hover\:span-wider:hover span {
+    width: 5rem; /* Cambia a 20 unidades (w-20 equivalente) */
+    border-color: #f97316;
+}
+  

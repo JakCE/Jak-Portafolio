@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IconsModule } from '../../icons.module';
 import { NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -10,8 +10,18 @@ import { RouterLink } from '@angular/router';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit{
   menuOpen = false;
+  @Input() mailVisible: boolean = true;
+
+  constructor(
+
+  ){}
+
+  ngOnInit(): void {
+    
+  }
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen; // Alterna el estado de abierto/cerrado
   }

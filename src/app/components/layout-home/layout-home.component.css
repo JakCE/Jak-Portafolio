@@ -9,3 +9,7 @@
 .part-layout{
     @apply h-[calc(100vh-180px)];
 }
+
+/* .img-jak{
+    filter: drop-shadow(4px 4px 4px #F97316);
+} */

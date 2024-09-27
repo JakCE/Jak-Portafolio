@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { LucideAngularModule, MoveRight, Smartphone, Github, Instagram, House, Bolt, Mail, ContactRound, BriefcaseBusiness, User, Linkedin } from 'lucide-angular';
+import { LucideAngularModule, MoveRight, File, Smartphone, Github, Instagram, House, Bolt, Mail, ContactRound, BriefcaseBusiness, User, Linkedin } from 'lucide-angular';
 
 @NgModule({
   imports: [LucideAngularModule.pick({ 
@@ -13,7 +13,8 @@ import { LucideAngularModule, MoveRight, Smartphone, Github, Instagram, House, B
     Instagram,
     Github,
     Smartphone,
-    MoveRight
+    MoveRight,
+    File
   })],
   exports: [LucideAngularModule],
 })
