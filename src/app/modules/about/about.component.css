@@ -9,4 +9,11 @@
     width: 5rem; /* Cambia a 20 unidades (w-20 equivalente) */
     border-color: #f97316;
 }
+
+*{
+    /* color: #53565A; */
+}
   
+.body-data{
+    height: calc(100vh - 80px);
+}
