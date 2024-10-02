@@ -7,3 +7,33 @@
     background-color: #ffb412; /* Cambia el color de fondo */
     color: #000; /* Cambia el color del texto si lo deseas */
 }
+
+
+/* SCROLL BAR */
+
+/* Estilo general para el scrollbar */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho del scrollbar */
+}
+
+/* Parte de la pista (track) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo del track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Parte del "dedo" (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: #D1D2D8; /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Hover en el thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bdbdbd; /* Color del thumb al hacer hover */
+}
+
+/* Scrollbar corner (solo en cajas con desplazamiento en ambas direcciones) */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* Color de la esquina */
+}

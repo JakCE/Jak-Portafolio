@@ -13,7 +13,7 @@
                         <h1 class="lilita-one-regular">Jak Campos</h1>
                         <app-typing-animation></app-typing-animation>
                         <!-- <h2 class="text-[1.3rem] lilita-one-regular">Full-Stack developer 💻</h2> -->
-                        <p class="text-[1rem] py-4">Innovation through code, creativity in each solution.</p>
+                        <p class="text-[1rem] py-4 text-gray-500">Innovation through code, creativity in each solution.</p>
                     </div>
                     <img src="./jak_perfil.jpg" alt="" class="w-32 flex rounded-full">
                 </div>
@@ -21,33 +21,90 @@
                     <div class="flex flex-col gap-4">
                         <div class="flex items-center justify-start cursor-pointer font-bold hover:span-wider hover:text-orange-500">
                             <span class="w-10 h-[1px] transition-all duration-300 border border-black"></span>
-                            <h2 class="pl-5">ABOUT</h2>
+                            <a routerLink="" fragment="about-section" class="pl-5">ABOUT</a>
+                            <!-- <h2 class="pl-5">ABOUT</h2> -->
                         </div>
                         <div class="flex items-center justify-start cursor-pointer font-bold hover:span-wider hover:text-orange-500">
                             <span class="w-10 h-[1px] transition-all duration-300 border border-black"></span>
-                            <h2 class="pl-5">EXPERIENCE</h2>
+                            <a routerLink="" fragment="experience-section" class="pl-5">EXPERIENCE</a>
+                            <!-- <h2 class="pl-5">EXPERIENCE</h2> -->
                         </div>
                         <div class="flex items-center justify-start cursor-pointer font-bold hover:span-wider hover:text-orange-500">
                             <span class="w-10 h-[1px] transition-all duration-300 border border-black"></span>
-                            <h2 class="pl-5">EDUCATION</h2>
+                            <a routerLink="" fragment="education-section" class="pl-5">EDUCATION</a>
+                            <!-- <h2 class="pl-5">EDUCATION</h2> -->
                         </div>
                         <div class="flex items-center justify-start cursor-pointer font-bold hover:span-wider hover:text-orange-500">
                             <span class="w-10 h-[1px] transition-all duration-300 border border-black"></span>
-                            <h2 class="pl-5">SKILLS</h2>
+                            <a routerLink="" fragment="skills-section" class="pl-5">SKILLS</a>
+                            <!-- <h2 class="pl-5">SKILLS</h2> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-1/2 px-5 py-3 h-full overflow-auto">
-                <p class="">
-                    I am a <b>Fullstack Developer</b> with a passion for creating <b>technological 
-                    solutions</b> that make a difference. With a strong background in <b>Computer 
-                    Science</b>, I have experience in <b>web application</b> development, <b>
-                    interface design</b>, and the implementation of <b>frontend</b> and <b>
-                    backend</b> technologies. I am motivated to work on projects that not only solve problems, but 
-                    also offer memorable <b>user experiences</b>.
-                </p><hr class="mt-6">
+            <div class="w-1/2 px-5 py-3 h-full overflow-x-auto">
+                <section id="about-section" class="">
+                    <p class="text-gray-500">
+                        I am a <b>Fullstack Developer</b> with a passion for creating <b>technological 
+                        solutions</b> that make a difference. With a strong background in <b>Computer 
+                        Science</b>, I have experience in <b>web application</b> development, <b>
+                        interface design</b>, and the implementation of <b>frontend</b> and <b>
+                        backend</b> technologies. I am motivated to work on projects that not only solve problems, but 
+                        also offer memorable <b>user experiences</b>.
+                    </p><hr class="mx-6 my-20">
+                </section>
+                <section id="experience-section" class="">
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+                        <!-- <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg></a>
+                        </li> -->
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2023 - Now</time>
+                            <br><time>Software Enterprise Services, Lima, Perú</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineering Trainee</h3>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                                I work as a Software Engineering Trainee at Software Enterprise Services, where I 
+                                participate in software development projects using agile methodologies and various 
+                                technologies. I am focused on improving my skills in programming and application 
+                                development, actively contributing in multidisciplinary teams to deliver innovative 
+                                and efficient solutions.
+                            </p>
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2021 - December 2022</time>
+                            <br><time>Servicios Educativos The Number One S.A.C.</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Full time mathematics Teacher</h3>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                                Teaching classes in the mathematics course to level students 
+                                primary, secondary and pre-university.
+                            </p>
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2021 - December 2021</time>
+                            <br><time>Institución Educativa San Antonio de Padua</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Part-time Mathematics Teacher</h3>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                                Teaching classes in the mathematical reasoning course at 3rd, 
+                                4th and 5th grade secondary level students.
+                            </p>
+                        </li>
+                    </ol><hr class="mx-6 my-20">
+                </section>
+                <section id="education-section" class="h-[20vh] bg-red-500">
+                    <hr class="mx-6 my-20">
+                </section>
+                <section id="skills-section" class="h-[20vh] bg-sky-500">
 
+                </section>
             </div>
         </div>
         <!-- FOOTER HOME -->
