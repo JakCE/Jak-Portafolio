@@ -3,16 +3,19 @@ import { IconsModule } from '../../icons.module';
 import { NgIf } from '@angular/common';
 import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
 import { TypingAnimationComponent } from "../../components/typing-animation/typing-animation.component";
+import { FooterPortComponent } from "../../components/footer-port/footer-port.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [IconsModule, NgIf, NavBarComponent, TypingAnimationComponent],
+  imports: [IconsModule, NgIf, NavBarComponent, TypingAnimationComponent, FooterPortComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements OnInit{
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private renderer: Renderer2,
+  ) {}
 
   ngOnInit(): void {
     const sections = document.querySelectorAll('section');
@@ -52,5 +55,12 @@ export class AboutComponent implements OnInit{
     sections.forEach((section) => {
       observer.observe(section);
     });
+  }
+
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
