@@ -6,8 +6,8 @@
             <!-- <app-about></app-about> -->
         </div>
         <!-- BODY HOME -->
-        <div class="w-full px-28 py-5 flex gap-5 body-data">
-            <div class="w-1/2 pr-10 h-full flex flex-col">
+        <div class="w-full px-10 md:px-28 py-5 block lg:flex gap-5 body-data">
+            <div class="lg:w-1/2 md:pr-10 flex flex-col">
                 <div class="flex justify-between w-full items-center pb-5 text-[35px] md:text-[3.5rem]">
                     <div class="">
                         <h1 class="lilita-one-regular">Jak Campos</h1>
@@ -17,7 +17,7 @@
                     </div>
                     <img src="./jak_perfil.jpg" alt="" class="w-32 flex rounded-full">
                 </div>
-                <div class="flex justify-start items-center lilita-one-regular">
+                <div class="hidden lg:flex justify-start items-center lilita-one-regular">
                     <div class="flex flex-col gap-4">
                         <div class="flex items-center justify-start cursor-pointer font-bold hover:span-wider hover:text-orange-500"
                             (click)="scrollToSection('about-section')">
@@ -41,11 +41,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex m-auto">
+                <div class="hidden lg:flex m-auto">
                     <app-footer-port></app-footer-port>
                 </div>
             </div>
-            <div class="w-1/2 px-5 py-3 h-full overflow-x-auto">
+            <div class="lg:w-1/2 px-5 py-3 lg:overflow-x-auto mt-10 lg:mt-0">
+                <h1 class="flex lg:hidden my-4 text-orange-500 font-bold text-[1.3rem] lilita-one-regular">ABOUT</h1>
                 <section id="about-section" class="">
                     <p class="text-gray-500">
                         I am a <b>Fullstack Developer</b> with a passion for creating <b>technological 
@@ -56,6 +57,7 @@
                         also offer memorable <b>user experiences</b>.
                     </p><hr class="mx-6 my-20">
                 </section>
+                <h1 class="flex lg:hidden my-4 text-orange-500 font-bold text-[1.3rem] lilita-one-regular">EXPERIENCE</h1>
                 <section id="experience-section" class="">
                     <ol class="relative border-s border-gray-200 dark:border-gray-700">
                         <!-- <li class="mb-10 ms-4">
@@ -102,7 +104,8 @@
                         </li>
                     </ol><hr class="mx-6 my-20">
                 </section>
-                <section id="education-section" class="h-[20vh]">
+                <h1 class="flex lg:hidden my-4 text-orange-500 font-bold text-[1.3rem] lilita-one-regular">EDUCATION</h1>
+                <section id="education-section" class="">
                     <!-- <div class="flex justify-center items-center my-5">
                         <lucide-icon name="GraduationCap" class="" [size]="50" [strokeWidth]="3" color="#F97316"></lucide-icon>
                     </div> -->
@@ -161,14 +164,35 @@
                     </ol>
                     <hr class="mx-6 my-20">
                 </section>
-                <section id="skills-section" class="h-[90vh]">
+                <h1 class="flex lg:hidden my-4 text-orange-500 font-bold text-[1.3rem] lilita-one-regular">SKILLS</h1>
+                <section id="skills-section" class="relative h-auto">
+                    <!-- <button data-tooltip-target="tooltip-animation" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Animated tooltip</button>
 
+                    <div id="tooltip-animation" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Tooltip content
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div> -->
+                    @for (part of listPartsSkills; track $index) {
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="text-center my-5">
+                                <h1 class="font-bold pb-3 text-base text-gray-900 dark:text-gray-400">
+                                    {{ part.title }}
+                                </h1>
+                            </div>
+                            <div class="flex items-center justify-evenly flex-wrap gap-5">
+                                @for (item of filterSkillsPart(part.part); track $index) {
+                                    <div class="cursor-pointer">
+                                        <img [src]="item.link" alt="" class="img-skillss p-3 w-16 flex">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
                 </section>
+                <div class="md:hidden flex m-auto mt-5 text-center">
+                    <app-footer-port></app-footer-port>
+                </div>
             </div>
         </div>
-        <!-- FOOTER HOME -->
-        <!-- <div class="fixed bottom-0 w-full">
-            <app-footer-port></app-footer-port>
-        </div> -->
     </div>
 </div>

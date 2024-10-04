@@ -24,3 +24,10 @@
 b{
     color: #111827;
 }
+.img-skillss{
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.img-skillss:hover{
+    filter: grayscale(0%);
+}
