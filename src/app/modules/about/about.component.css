@@ -12,13 +12,9 @@
 .span-active{
     width: 5rem;
 }
-
-*{
-    /* color: #53565A; */
-}
   
 .body-data{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
 }
 
 b{
