@@ -4,6 +4,7 @@ import { NgFor, NgIf } from '@angular/common';
 import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
 import { TypingAnimationComponent } from "../../components/typing-animation/typing-animation.component";
 import { FooterPortComponent } from "../../components/footer-port/footer-port.component";
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-about',
@@ -184,9 +185,14 @@ export class AboutComponent implements OnInit{
 
   constructor(
     private renderer: Renderer2,
-  ) {}
+  ) {
+    initFlowbite();
+  }
+
+  
 
   ngOnInit(): void {
+    initFlowbite();
     console.log(this.listImgSkills);
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.cursor-pointer a');

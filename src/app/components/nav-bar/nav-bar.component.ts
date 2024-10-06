@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { IconsModule } from '../../icons.module';
 import { NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-nav-bar',
@@ -19,10 +20,12 @@ export class NavBarComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    
+    initFlowbite();
   }
 
   toggleMenu() {
+    console.log("impr");
     this.menuOpen = !this.menuOpen; // Alterna el estado de abierto/cerrado
+    console.log(this.menuOpen);
   }
 }

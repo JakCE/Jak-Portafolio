@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IconsModule } from '../../icons.module';
 import { RouterLink } from '@angular/router';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-layout-home',
@@ -9,6 +10,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './layout-home.component.html',
   styleUrl: './layout-home.component.css'
 })
-export class LayoutHomeComponent {
-
+export class LayoutHomeComponent implements OnInit{
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
