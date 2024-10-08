@@ -1,16 +1,59 @@
 <div class="w-full h-[100vh]">
     <div class="w-full h-full">
         <!-- NAV BAR -->
-        <div class="w-full p-5 md:h-[90px]">
-            <app-nav-bar [mailVisible]="false"></app-nav-bar>
-            <!-- <app-about></app-about> -->
+        <div class="w-full p-5 flex items-center justify-between cursor-pointer">
+            <a routerLink="/home" class="border border-white hover:border-orange-500 p-2 rounded-lg hover:text-orange-500">
+                <lucide-icon name="House"></lucide-icon>
+            </a>
+            <a href="https://github.com/JakCE/Jak-Portafolio" target="_blank" class="flex items-center justify-center gap-2 transition-transform duration-300 hover:scale-105 group">
+                <div class="">
+                    <a type="button" class="text-gray-900 bg-white group-hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 rounded-lg px-1 py-1 flex items-center justify-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex items-center justify-start">
+                    <!-- Triángulo -->
+                    <div class="triangle"></div>
+                    
+                    <!-- Caja de mensaje -->
+                    <div class="bg-[#F3F4F6] px-5 py-2 rounded-lg group-hover:bg-yellow-200">
+                        <small class="flex items-center justify-center font-semibold">
+                            ¡Deja tu &nbsp;
+                            <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            &nbsp;en Github!
+                        </small>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- SECTION BANNNER -->
+        <div class="w-full lg:h-[70vh] md:px-[20%] flex items-center justify-center text-gray-700">
+            <div class="flex flex-col items-center justify-center mx-10">
+                <div class="">
+                    <img src="./jak_perfil.jpg" alt="" class="w-36 h-auto my-10 rounded-lg">
+                </div>
+                <p class="text-justify leading-loose">
+                    Hi, I'm <strong>Jak</strong>! I am a <strong>Fullstack developer</strong> focused on creating <strong>digital solutions</strong> that improve the <strong>user experience</strong>. I am passionate about sharing my knowledge and <strong>contributing</strong> to the technology community through <strong>innovative projects</strong>.
+                </p>
+                <div class="flex items-center justify-center py-5">
+                    <a data-popover-target="popover-user-profile" href="https://www.instagram.com/_jak.30/" target="_blank" class="text-black border border-red-600 cursor-pointer hover:bg-red-300/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-bold rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                        <img class="w-5 h-5 mr-3" src="./instagram.svg">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1"> <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path> </svg> -->
+                        Follow me on Instagram
+                    </a>
+                </div>
+            </div>
         </div>
         <!-- CONTENIDO PROJECTS -->
         <div class="p-4 mt-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @for (item of arrayDataProjects; track $index) {
                     <div>
-                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-105" [src]="item.imgSrc" alt="">
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" [src]="item.imgSrc" alt="">
                         <div class="py-5 px-6 overflow-auto">
                             <h1 class="font-bold cursor-pointer text-[#111827] hover:text-[#EAB308] text-[2.5rem] lilita-one-regular">{{ item.title }}</h1>
                             <p class="text-gray-500 font-thin">{{ item.description }}</p>
@@ -20,13 +63,13 @@
                                 }
                             </div>
                             <div class="flex">
-                                <a type="button" [href]="item.linkRepo" class="text-white cursor-pointer font-bold bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                                <a type="button" [href]="item.linkRepo" target="_blank" class="text-white cursor-pointer font-bold bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
                                     <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                                     </svg>
                                     Code
                                 </a>
-                                <a type="button" [href]="item.linkDemo" class="text-white cursor-pointer bg-orange-500 hover:bg-orange-500/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-bold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                                <a type="button" [href]="item.linkDemo" target="_blank" class="text-white cursor-pointer bg-orange-500 hover:bg-orange-500/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-bold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1"> <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path> </svg>
                                     Preview
                                 </a>
@@ -70,4 +113,50 @@
             </div>
         </div>
     </div>
+</div>
+
+<!--  -->
+<div data-popover id="popover-user-profile" role="tooltip" class="absolute z-10 invisible inline-block w-80 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+    <div class="">
+        <div class="flex items-center justify-start mb-2">
+            <a href="https://www.instagram.com/_jak.30/" target="_blank" class="p-3">
+                <img class="w-16 h-16 rounded-full" src="./jak_perfil.jpg" alt="Jak Campos">
+            </a>
+            <div class="block justify-start items-center">
+                <p class="text-base font-bold leading-none text-gray-900 dark:text-white">
+                    <a href="https://www.instagram.com/_jak.30/" target="_blank">_Jak.30</a>
+                </p>
+                <p class="text-sm font-normal">
+                    <a href="https://www.instagram.com/_jak.30/" target="_blank" class="hover:underline">Jak</a>
+                </p>
+                <div class="flex items-center justify-center cursor-pointer p-[3px] px-2 rounded-full text-black bg-[#E3E3E3]">
+                    <svg aria-label="Threads" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16" role="img" viewBox="0 0 192 192" width="16"><title>Threads</title><path class="xcslo1z" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path></svg>
+                    <small class="">_Jak.30</small>
+                </div>
+            </div>
+            <!-- <div>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Follow</button>
+            </div> -->
+        </div>
+        <div class="flex justify-center items-center w-full text-black mb-3">
+            <div class="w-1/3 block p-2">
+                <p class="w-full text-center font-bold">17</p>
+                <p class="w-full text-center">publicaciones</p>
+            </div>
+            <div class="w-1/3 block p-2">
+                <p class="w-full text-center font-bold">145</p>
+                <p class="w-full text-center">seguidores</p>
+            </div>
+            <div class="w-1/3 block p-2">
+                <p class="w-full text-center font-bold">563</p>
+                <p class="w-full text-center">seguidos</p>
+            </div>
+        </div>
+        <div class="flex justify-between items-center pb-2 w-full">
+            <img class="w-[103px]" src="./img_ig/foto1.jpg" alt="Jak Campos">
+            <img class="w-[103px]" src="./img_ig/foto2.jpg" alt="Jak Campos">
+            <img class="w-[103px]" src="./img_ig/foto3.jpg" alt="Jak Campos">
+        </div>
+    </div>
+    <div data-popper-arrow></div>
 </div>

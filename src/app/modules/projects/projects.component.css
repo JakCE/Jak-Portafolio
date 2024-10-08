@@ -5,3 +5,22 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #F3F4F6;
+    transform: rotate(-90deg) translateY(6px);
+}
+
+.group:hover .triangle {
+    border-bottom-color: #fce96a; /* Amarillo */
+}
+
+strong{
+    background-color: #FDE047;
+    color: black;
+    padding: 2px 4px 2px 4px;
+}

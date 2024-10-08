@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { LucideAngularModule, MoveRight, File, GraduationCap, Smartphone, Github, Instagram, House, Bolt, Mail, ContactRound, BriefcaseBusiness, User, Linkedin } from 'lucide-angular';
+import { LucideAngularModule, CornerUpLeft, MoveRight, File, GraduationCap, Smartphone, Github, Instagram, House, Bolt, Mail, ContactRound, BriefcaseBusiness, User, Linkedin } from 'lucide-angular';
 
 @NgModule({
   imports: [LucideAngularModule.pick({ 
@@ -15,7 +15,8 @@ import { LucideAngularModule, MoveRight, File, GraduationCap, Smartphone, Github
     Smartphone,
     MoveRight,
     File,
-    GraduationCap
+    GraduationCap,
+    CornerUpLeft
   })],
   exports: [LucideAngularModule],
 })
