@@ -10,13 +10,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @for (item of arrayDataProjects; track $index) {
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" [src]="item.imgSrc" alt="">
+                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-105" [src]="item.imgSrc" alt="">
                         <div class="py-5 px-6 overflow-auto">
                             <h1 class="font-bold cursor-pointer text-[#111827] hover:text-[#EAB308] text-[2.5rem] lilita-one-regular">{{ item.title }}</h1>
                             <p class="text-gray-500 font-thin">{{ item.description }}</p>
-                            <div class="flex text-gray-500 my-4">
+                            <div class="flex text-gray-500 my-4 flex-wrap">
                                 @for (val of item.badgets; track $index) {
-                                    <span class="bg-gray-100 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{{ val }}</span>
+                                    <span class="bg-gray-100 my-1 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{{ val }}</span>
                                 }
                             </div>
                             <div class="flex">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 }
-                <div>
+                <!-- <div>
                     <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
                 </div>
                 <div>
@@ -66,7 +66,7 @@
                 </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

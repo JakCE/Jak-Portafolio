@@ -4,7 +4,7 @@
             <div class="flex justify-start items-center px-2 h-[40px] text-[40px] lilita-one-regular"><h1 class="text-gray-400">J<span class="text-orange-500">A</span>K</h1></div>
             <div class="flex justify-start items-center px-2 bg-orange-500 text-white font-bold rounded-sm"><small>Portfolio</small></div>
         </div>
-        <div class="info flex justify-start items-center animate-slideDown" *ngIf="mailVisible">
+        <div class="info flex justify-start items-center animate-slideDown cursor-pointer" (click)="sendEmail()" *ngIf="mailVisible">
             <p class="flex items-center justify-start text-center"><lucide-icon name="mail" class="mx-2" [size]="20"></lucide-icon> jak.ce30&#64;gmail.com</p>
         </div>
         <div class="config flex justify-start items-center">

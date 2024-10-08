@@ -28,4 +28,8 @@ export class NavBarComponent implements OnInit{
     this.menuOpen = !this.menuOpen; // Alterna el estado de abierto/cerrado
     console.log(this.menuOpen);
   }
+
+  sendEmail() {
+    window.location.href = 'mailto:tuemail@example.com';
+  }
 }
