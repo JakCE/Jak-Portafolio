@@ -100,6 +100,16 @@ export class AboutComponent implements OnInit{
       part: 2
     },
     {
+      skill: 'astro',
+      link: './ico_skills/astrojs.svg',
+      part: 2
+    },
+    {
+      skill: 'node',
+      link: './ico_skills/nodejs-1.svg',
+      part: 2
+    },
+    {
       skill: 'express',
       link: './ico_skills/express-109.svg',
       part: 2
