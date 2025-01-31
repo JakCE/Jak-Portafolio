@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit{
       description: 'Web portfolio with responsive design, enhanced accessibility, and interactive components.',
       linkDemo: 'https://jak-portafolio.vercel.app/home',
       linkRepo: 'https://github.com/JakCE/Jak-Portafolio',
-      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'FrontendDevelopment'],
+      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'PWA'],
     },
     {
       imgSrc: './projects_img/ft_portfolio.png',
