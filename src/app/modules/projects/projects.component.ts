@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit{
       description: 'Check4Class is a Progressive Web App (PWA) designed to help teachers track student attendance in an academy. It allows instructors to register check-ins and check-outs per class, ensuring accurate records and seamless monitoring. The app simplifies attendance management, reducing administrative workload and improving efficiency.',
       linkDemo: 'https://check4-class.vercel.app/',
       linkRepo: 'https://github.com/JakCE/Check4Class',
-      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'PWA'],
+      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'PWA', 'Supabase'],
     },
     {
       imgSrc: './projects_img/ft_portfolio.webp',
