@@ -7,12 +7,30 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NavBarComponent, IconsModule, RouterLink],
+  imports: [IconsModule, RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent implements OnInit{
   arrayDataProjects: any = [
+    {
+      imgSrc: './projects_img/ft_portfolio.png',
+      title: 'Portfolio',
+      state: 'Active',
+      description: 'Web portfolio with responsive design, enhanced accessibility, and interactive components.',
+      linkDemo: 'https://jak-portafolio.vercel.app/home',
+      linkRepo: 'https://github.com/JakCE/Jak-Portafolio',
+      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'FrontendDevelopment'],
+    },
+    {
+      imgSrc: './projects_img/ft_portfolio.png',
+      title: 'Portfolio',
+      state: 'Active',
+      description: 'Web portfolio with responsive design, enhanced accessibility, and interactive components.',
+      linkDemo: 'https://jak-portafolio.vercel.app/home',
+      linkRepo: 'https://github.com/JakCE/Jak-Portafolio',
+      badgets: ['Angular', 'Tailwind CSS', 'Flowbite UI', 'ResponsiveDesign', 'FrontendDevelopment'],
+    },
     {
       imgSrc: './projects_img/ft_portfolio.png',
       title: 'Portfolio',
