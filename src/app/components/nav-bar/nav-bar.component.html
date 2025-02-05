@@ -1,4 +1,4 @@
-<div class="hidden lg:grid grid-cols-3 gap-4">
+<!-- <div class="w-full hidden lg:grid grid-cols-3 gap-4 overflow-hidden">
     <div class="col-span-2 grid grid-cols-3 gap-4">
         <div class="logo flex justify-start items-center cursor-pointer">
             <div class="flex justify-start items-center px-2 h-[40px] text-[40px] lilita-one-regular"><h1 class="text-gray-400">J<span class="text-orange-500">A</span>K</h1></div>
@@ -8,7 +8,7 @@
             <p class="flex items-center justify-start text-center"><lucide-icon name="mail" class="mx-2" [size]="20"></lucide-icon> jak.ce30&#64;gmail.com</p>
         </div>
         <div class="config flex justify-start items-center">
-            <!-- <lucide-icon name="bolt" [size]="20"></lucide-icon> -->
+            <!-- <lucide-icon name="bolt" [size]="20"></lucide-icon> --
         </div>
     </div>
     <div class="hidden lg:flex justify-evenly items-center gap-4">
@@ -16,6 +16,41 @@
         <div class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold animate-slideDown" routerLink="/about"><lucide-icon name="User" class="mx-1" [size]="20"></lucide-icon> About</div>
         <div class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-orange-500 font-bold animate-slideDown" routerLink="/projects"><lucide-icon name="BriefcaseBusiness" class="mx-1" [size]="20"></lucide-icon> Projects</div>
         <a class="flex items-center justify-start text-center cursor-pointer hover:underline transition-all duration-300 ease-in-out hover:text-white font-bold animate-slideDown hover:bg-orange-500 p-2 rounded-md" href="https://read.cv/jak_ce" target="_blank"><lucide-icon name="File" class="mx-1" [size]="20"></lucide-icon> My CV</a>
+    </div>
+</div> -->
+
+<div class="w-full hidden lg:flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center cursor-pointer">
+        <div class="flex items-center text-3xl xl:text-4xl lilita-one-regular">
+            <h1 class="text-gray-400">J<span class="text-orange-500">A</span>K</h1>
+        </div>
+        <div class="px-2 py-1 bg-orange-500 text-white font-bold rounded-sm text-sm lg:text-base">
+            Portfolio
+        </div>
+    </div>
+
+    <!-- Contacto (Email) -->
+    <div class="flex items-center animate-slideDown cursor-pointer" (click)="sendEmail()" *ngIf="mailVisible">
+        <p class="flex items-center text-sm xl:text-base">
+            <lucide-icon name="mail" class="mx-2" [size]="20"></lucide-icon> jak.ce30&#64;gmail.com
+        </p>
+    </div>
+
+    <!-- Menú de Navegación -->
+    <div class="hidden lg:flex items-center gap-6 xl:gap-8">
+        <div class="flex items-center cursor-pointer hover:underline transition duration-300 hover:text-orange-500 font-bold animate-slideDown" routerLink="/home">
+            <lucide-icon name="house" class="mr-2" [size]="20"></lucide-icon> Home
+        </div>
+        <div class="flex items-center cursor-pointer hover:underline transition duration-300 hover:text-orange-500 font-bold animate-slideDown" routerLink="/about">
+            <lucide-icon name="User" class="mr-2" [size]="20"></lucide-icon> About
+        </div>
+        <div class="flex items-center cursor-pointer hover:underline transition duration-300 hover:text-orange-500 font-bold animate-slideDown" routerLink="/projects">
+            <lucide-icon name="BriefcaseBusiness" class="mr-2" [size]="20"></lucide-icon> Projects
+        </div>
+        <a class="flex items-center cursor-pointer hover:underline transition duration-300 hover:text-white font-bold animate-slideDown hover:bg-orange-500 px-4 py-2 rounded-md" href="https://read.cv/jak_ce" target="_blank">
+            <lucide-icon name="File" class="mr-2" [size]="20"></lucide-icon> My CV
+        </a>
     </div>
 </div>
 
